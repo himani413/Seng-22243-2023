@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Seng-22243-2023"
 include ':app'
+include ':driver'
