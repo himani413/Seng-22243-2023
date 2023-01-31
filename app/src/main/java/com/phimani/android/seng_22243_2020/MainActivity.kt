@@ -1,5 +1,6 @@
 package com.phimani.android.seng_22243_2020
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
+    @SuppressLint("ResourceAsColor", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
@@ -35,6 +37,13 @@ class MainActivity : AppCompatActivity() {
                 .setAnchorView(R.id.fab)
                 .setAction("Action", null).show()
 
+        }
+
+        binding.fab.setOnLongClickListener{ view ->
+            binding.infoTextView.text= "Long press is done!!!"
+            binding.infoTextView.setBackgroundResource(R.color.lightpurple)
+
+            return@setOnLongClickListener true
         }
     }
 

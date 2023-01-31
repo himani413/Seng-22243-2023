@@ -9,6 +9,7 @@
     <string name="previous">Previous</string>
     <string name="third">Third</string>
     <string name="first">First</string>
+    <string name="long_press">Long press is done!!!</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
